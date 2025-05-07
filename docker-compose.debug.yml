@@ -5,7 +5,7 @@ services:
     image: domivueapi
     build:
       context: .
-      dockerfile: WebApplication1/Dockerfile
+      dockerfile: src/Domivue.Api/Dockerfile
       args:
         - configuration=Debug
     ports:
