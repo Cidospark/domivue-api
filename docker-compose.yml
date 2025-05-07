@@ -1,0 +1,11 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+services:
+  domivueapi:
+    image: domivueapi
+    build:
+      context: .
+      dockerfile: src/Domivue.Api/Dockerfile
+    ports:
+      - 5122:5122
+      - 7148:7148
