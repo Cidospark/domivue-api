@@ -9,15 +9,15 @@ USER app
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY ["src/Domivue.Api/Domivue.Api.csproj", "src/Domivue.Api/"]
-RUN dotnet restore "src/Domivue.Api/Domivue.Api.csproj"
+COPY Domivue.Api.csproj ./
+RUN dotnet restore Domivue.Api.csproj
 COPY . .
-WORKDIR "/src/src/Domivue.Api"
-RUN dotnet build "Domivue.Api.csproj" -c $configuration -o /app/build
+
+RUN dotnet build Domivue.Api.csproj -c $configuration -o /app/build
 
 FROM build AS publish
 ARG configuration=Release
-RUN dotnet publish "Domivue.Api.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
+RUN dotnet publish Domivue.Api.csproj -c $configuration -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

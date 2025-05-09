@@ -4,8 +4,8 @@ services:
   domivueapi:
     image: domivueapi
     build:
-      context: .
-      dockerfile: src/Domivue.Api/Dockerfile
+      context: src/Domivue.Api
+      dockerfile: ./Dockerfile
       args:
         - configuration=Debug
     ports:
