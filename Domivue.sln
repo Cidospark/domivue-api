@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0BF34D3-487
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Api", "src\Domivue.Api\Domivue.Api.csproj", "{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Core", "src\Domivue.Core\Domivue.Core.csproj", "{00E55248-B085-4B1D-87E4-A462C4AA3DA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +22,13 @@ Global
 		{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
+		{00E55248-B085-4B1D-87E4-A462C4AA3DA5} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
 	EndGlobalSection
 EndGlobal
