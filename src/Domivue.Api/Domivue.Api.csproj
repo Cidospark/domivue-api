@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="../Domivue.Application/Domivue.Application.csproj" />
-    <ProjectReference Include="../Domivue.Infrastructure/Domivue.Infrastructure.csproj" />
+    <!--
+    <ProjectReference Include="../Domivue.Infrastructure/Domivue.Infrastructure.csproj" /> -->
+    <!-- <ProjectReference Include="../Domivue.Core/Domivue.Core.csproj" /> -->
   </ItemGroup>
 </Project>
