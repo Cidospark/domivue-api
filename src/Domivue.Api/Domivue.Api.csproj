@@ -11,6 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../Domivue.Core/Domivue.Core.csproj" />
+    <ProjectReference Include="../Domivue.Application/Domivue.Application.csproj" />
   </ItemGroup>
 </Project>

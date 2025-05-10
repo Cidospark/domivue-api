@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Api", "src\Domivue.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Core", "src\Domivue.Core\Domivue.Core.csproj", "{00E55248-B085-4B1D-87E4-A462C4AA3DA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Infrastructure", "src\Domivue.Infrastructure\Domivue.Infrastructure.csproj", "{59564FD6-340A-4033-8450-8AF86F5FB82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domivue.Application", "src\Domivue.Application\Domivue.Application.csproj", "{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +30,19 @@ Global
 		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E55248-B085-4B1D-87E4-A462C4AA3DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59564FD6-340A-4033-8450-8AF86F5FB82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59564FD6-340A-4033-8450-8AF86F5FB82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59564FD6-340A-4033-8450-8AF86F5FB82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59564FD6-340A-4033-8450-8AF86F5FB82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0911D7DC-2D29-4BF8-B7E6-797B8B385BF3} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
 		{00E55248-B085-4B1D-87E4-A462C4AA3DA5} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
+		{59564FD6-340A-4033-8450-8AF86F5FB82A} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
+		{4FA133E7-D5D3-45FC-8FDF-A2520D4F18F5} = {D0BF34D3-4879-4C39-B7F8-14E03B7EC95E}
 	EndGlobalSection
 EndGlobal

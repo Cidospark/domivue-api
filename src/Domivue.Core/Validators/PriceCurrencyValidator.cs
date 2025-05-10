@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace Domivue.Core.Domains.customAttributesValidators;
+namespace Domivue.Core.Domains.Validators;
 
 public class PriceCurrencyValidator : ValidationAttribute
 {
