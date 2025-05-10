@@ -40,6 +40,5 @@ public class Listing : Entity
     public List<ListingsCategory> ListingsCategories { get; set; } = new List<ListingsCategory>();
     public SubCategory? SubCategory { get; set; }
     public Location? Location { get; set; }
-
-    // seller
+    public User? Seller { get; set; }
 }
