@@ -6,11 +6,11 @@ using Domivue.Api.Modules.Categories.Models.Entities;
 public class ListingsCategory
 {
     [Key]
-    public Guid ListingsCategoryId { get; set; } = Guid.NewGuid();
+    public string ListingsCategoryId { get; set; } = Guid.NewGuid().ToString();
     [Required]
-    public Guid ListingId { get; set; }
+    public string ListingId { get; set; } = "";
     [Required]
-    public Guid CategoryId { get; set; }
+    public string CategoryId { get; set; } = "";
 
     public Listing? Listing { get; set; }
     public Category? Category { get; set; }

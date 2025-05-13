@@ -11,10 +11,10 @@ using Domivue.Api.Modules.Users.Models.Entities;
 public class Listing : Entity
 {
     [Required]
-    public Guid SellerId { get; set; }
+    public string SellerId { get; set; } = "";
 
     [Required]
-    public Guid SubCategoryId { get; set; }
+    public string SubCategoryId { get; set; } = "";
 
 
     public bool IsLiked { get; set; }
