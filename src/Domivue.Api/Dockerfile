@@ -9,9 +9,9 @@ USER app
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY Domivue.Api.csproj ./
-RUN dotnet restore Domivue.Api.csproj
+# COPY Domivue.Api.csproj ./
 COPY . .
+RUN dotnet restore Domivue.Api.csproj
 
 RUN dotnet build Domivue.Api.csproj -c $configuration -o /app/build
 
@@ -22,5 +22,5 @@ RUN dotnet publish Domivue.Api.csproj -c $configuration -o /app/publish /p:UseAp
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-#ENTRYPOINT ["dotnet", "Domivue.Api.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet Domivue.Api.dll
+ENTRYPOINT ["dotnet", "Domivue.Api.dll"]
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet Domivue.Api.dll
