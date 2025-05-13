@@ -7,12 +7,12 @@ public class ListingsTag
 {
 
     [Key]
-    public Guid ListingsTagId { get; set; } = Guid.NewGuid();
+    public string ListingsTagId { get; set; } = Guid.NewGuid().ToString();
 
     [Required]
-    public Guid ListingId { get; set; }
+    public string ListingId { get; set; } = "";
     [Required]
-    public Guid TagId { get; set; }
+    public string TagId { get; set; } = "";
 
     public Listing? Listing { get; set; }
     public Tag? Tag { get; set; }

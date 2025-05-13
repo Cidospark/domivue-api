@@ -1,7 +1,7 @@
 [
   {
     "sellerId": "74b56286-dcef-4973-b11c-856077da5153",
-    "subCategoryId":"3bbc0514-7447-4474-a28e-7bc132a812d4",
+    "subCategoryId":"5c5d210c-2b68-459b-bde6-10e80a1036e3",
     "isLiked": true,
     "isWishList": true,
     "isSold": false,
@@ -189,10 +189,10 @@
 
     "seller": {
         "id": "74b56286-dcef-4973-b11c-856077da5153",
-        "userId":"4e34aa55-3f5d-4b70-9268-578e600ed649",
+        "userId":"02cc6af4-75ff-46ac-8232-29dec3ebf6eb",
         "rated": 4.5,
         "likes": 12000,
-        "role": "Buyer",
+        "role": "Seller",
         "isBlock": false,
         "bio": "I'm John, a real estate agent with over 10+ experience in the industry, i have built a track record for myself and my company which have promoted and keep me relevant over the years.I will like to walk with you, help you get your dream home and all the necessary documents. i have built a good relationship with client that you can check their feedbacks in the comment section"
     },

@@ -9,8 +9,8 @@ namespace Domivue.Api.Modules.WorkHistories.Models.Entities
     {
     
         [Required]
-        public Guid SellerId { get; private set; }
-        public Guid ListingId { get; private set; }
+        public string SellerId { get; private set; } = "";
+        public string ListingId { get; private set; } = "";
         
         [Required]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Max: 50, Min: 3 characters allowed")]
@@ -31,7 +31,7 @@ namespace Domivue.Api.Modules.WorkHistories.Models.Entities
 
     public class WorkHistoryLocation:Location
     {
-        public Guid WorkHistoryId { get; set; }
+        public string WorkHistoryId { get; set; } = "";
         public WorkHistory? WorkHistory { get; set; }
     }
 }

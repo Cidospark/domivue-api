@@ -1,6 +1,6 @@
 namespace Domivue.Api.Modules.Abstractions;
 public abstract class Entity{
-    public Guid Id { get; init; } = Guid.NewGuid();
+    public string Id { get; init; } = Guid.NewGuid().ToString();
     private readonly List<IDomainEvent> _domainEvents = new();
 
     public IReadOnlyList<IDomainEvent> GetDomainEvents(){
