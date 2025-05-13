@@ -8,7 +8,7 @@ using Domivue.Api.Modules.Listings.Models.Entities;
 public class SubCategory : Entity{
     
     [Required]
-    public Guid CategoryId { get; set; }
+    public string CategoryId { get; set; }  = "";
 
     [Required]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Max: 50, Min: 3 characters allowed")]

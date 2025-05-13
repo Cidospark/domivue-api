@@ -24,19 +24,20 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Domains.Chat", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Message")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("ReceiverId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ReceiverId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("SenderId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("Timestamp")
                         .HasColumnType("timestamp with time zone");
@@ -48,9 +49,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Abstractions.Attr", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Key")
                         .IsRequired()
@@ -58,6 +58,9 @@ namespace Domivue.Api.Data.Migrations
 
                     b.Property<Guid>("ListingId")
                         .HasColumnType("uuid");
+
+                    b.Property<string>("ListingId1")
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -70,16 +73,15 @@ namespace Domivue.Api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ListingId");
+                    b.HasIndex("ListingId1");
 
                     b.ToTable("Attrs");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Categories.Models.Entities.Category", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -93,12 +95,12 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Categories.Models.Entities.SubCategory", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("CategoryId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -112,86 +114,23 @@ namespace Domivue.Api.Data.Migrations
                     b.ToTable("SubCategories");
                 });
 
-            modelBuilder.Entity("Domivue.Api.Modules.Comments.Models.Entities.Comment", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("CommenterId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("CommmenterId")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<double>("Rated")
-                        .HasColumnType("double precision");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CommmenterId");
-
-                    b.HasIndex("ListingId");
-
-                    b.ToTable("ListingComments");
-                });
-
-            modelBuilder.Entity("Domivue.Api.Modules.Comments.Models.Entities.CommentLiker", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("ListingCommentId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ListingCommentId");
-
-                    b.HasIndex("UserId1");
-
-                    b.ToTable("CommentLikers");
-                });
-
             modelBuilder.Entity("Domivue.Api.Modules.GalleryImages.Models.Entities.GalleryImage", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<bool>("IsHero")
                         .HasColumnType("boolean");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("PhotoUrl")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("PublicId")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -203,9 +142,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.Listing", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<DateTime?>("CloseDate")
                         .HasColumnType("timestamp with time zone");
@@ -238,11 +176,13 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("SellerId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SellerId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("SubCategoryId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SubCategoryId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -253,38 +193,96 @@ namespace Domivue.Api.Data.Migrations
                     b.ToTable("Listings");
                 });
 
+            modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingComment", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("CommenterId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("CommmenterId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("Rated")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommmenterId");
+
+                    b.HasIndex("ListingId");
+
+                    b.ToTable("ListingComments");
+                });
+
+            modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingCommentLiker", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ListingCommentId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ListingCommentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ListingCommentLikers");
+                });
+
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingLiker", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("LikedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ListingId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("ListingLikers");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingLocation", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -300,8 +298,9 @@ namespace Domivue.Api.Data.Migrations
                     b.Property<decimal>("LatitudeDelta")
                         .HasColumnType("numeric");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<decimal>("Longitude")
                         .HasColumnType("numeric");
@@ -323,15 +322,16 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingsCategory", b =>
                 {
-                    b.Property<Guid>("ListingsCategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingsCategoryId")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("CategoryId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("ListingsCategoryId");
 
@@ -344,15 +344,16 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingsTag", b =>
                 {
-                    b.Property<Guid>("ListingsTagId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingsTagId")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("TagId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("TagId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("ListingsTagId");
 
@@ -365,9 +366,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Subscriptions.Models.Entities.Subscription", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("End")
                         .IsRequired()
@@ -381,24 +381,21 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Subscriptions");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Tags.Models.Entities.Tag", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -412,9 +409,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.Users.Models.Entities.Seller", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Availability")
                         .IsRequired()
@@ -440,68 +436,62 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("SubscriberId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SubscriberId")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("SubscriberId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Sellers");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Users.Models.Entities.SellerFollower", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("SellerId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SellerId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("SellerId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("SellerFollowers");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Users.Models.Entities.SellerLiker", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("SellerId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SellerId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("SellerId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("SellerLikers");
                 });
@@ -626,9 +616,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.WorkHistories.Models.Entities.WorkHistory", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<DateTime?>("CloseDate")
                         .HasColumnType("timestamp with time zone");
@@ -645,8 +634,9 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("ListingId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("ListingId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<DateTime?>("PostDate")
                         .HasColumnType("timestamp with time zone");
@@ -656,8 +646,9 @@ namespace Domivue.Api.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
 
-                    b.Property<Guid>("SellerId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("SellerId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -670,9 +661,8 @@ namespace Domivue.Api.Data.Migrations
 
             modelBuilder.Entity("Domivue.Api.Modules.WorkHistories.Models.Entities.WorkHistoryLocation", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -698,8 +688,9 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("WorkHistoryId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("WorkHistoryId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -845,9 +836,7 @@ namespace Domivue.Api.Data.Migrations
                 {
                     b.HasOne("Domivue.Api.Modules.Listings.Models.Entities.Listing", "Listing")
                         .WithMany("Features")
-                        .HasForeignKey("ListingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ListingId1");
 
                     b.Navigation("Listing");
                 });
@@ -861,40 +850,6 @@ namespace Domivue.Api.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("Domivue.Api.Modules.Comments.Models.Entities.Comment", b =>
-                {
-                    b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "Commmenter")
-                        .WithMany()
-                        .HasForeignKey("CommmenterId");
-
-                    b.HasOne("Domivue.Api.Modules.Listings.Models.Entities.Listing", "Listing")
-                        .WithMany()
-                        .HasForeignKey("ListingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Commmenter");
-
-                    b.Navigation("Listing");
-                });
-
-            modelBuilder.Entity("Domivue.Api.Modules.Comments.Models.Entities.CommentLiker", b =>
-                {
-                    b.HasOne("Domivue.Api.Modules.Comments.Models.Entities.Comment", "ListingComment")
-                        .WithMany("Likes")
-                        .HasForeignKey("ListingCommentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId1");
-
-                    b.Navigation("ListingComment");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.GalleryImages.Models.Entities.GalleryImage", b =>
@@ -927,6 +882,42 @@ namespace Domivue.Api.Data.Migrations
                     b.Navigation("SubCategory");
                 });
 
+            modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingComment", b =>
+                {
+                    b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "Commmenter")
+                        .WithMany()
+                        .HasForeignKey("CommmenterId");
+
+                    b.HasOne("Domivue.Api.Modules.Listings.Models.Entities.Listing", "Listing")
+                        .WithMany()
+                        .HasForeignKey("ListingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Commmenter");
+
+                    b.Navigation("Listing");
+                });
+
+            modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingCommentLiker", b =>
+                {
+                    b.HasOne("Domivue.Api.Modules.Listings.Models.Entities.ListingComment", "ListingComment")
+                        .WithMany("Likes")
+                        .HasForeignKey("ListingCommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ListingComment");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingLiker", b =>
                 {
                     b.HasOne("Domivue.Api.Modules.Listings.Models.Entities.Listing", "Listing")
@@ -937,7 +928,9 @@ namespace Domivue.Api.Data.Migrations
 
                     b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Listing");
 
@@ -997,7 +990,9 @@ namespace Domivue.Api.Data.Migrations
                 {
                     b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -1006,13 +1001,13 @@ namespace Domivue.Api.Data.Migrations
                 {
                     b.HasOne("Domivue.Api.Modules.Subscriptions.Models.Entities.Subscription", "Subscriber")
                         .WithMany()
-                        .HasForeignKey("SubscriberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SubscriberId");
 
                     b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Subscriber");
 
@@ -1029,7 +1024,9 @@ namespace Domivue.Api.Data.Migrations
 
                     b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Seller");
 
@@ -1046,7 +1043,9 @@ namespace Domivue.Api.Data.Migrations
 
                     b.HasOne("Domivue.Api.Modules.Users.Models.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Seller");
 
@@ -1155,11 +1154,6 @@ namespace Domivue.Api.Data.Migrations
                     b.Navigation("Listings");
                 });
 
-            modelBuilder.Entity("Domivue.Api.Modules.Comments.Models.Entities.Comment", b =>
-                {
-                    b.Navigation("Likes");
-                });
-
             modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.Listing", b =>
                 {
                     b.Navigation("Features");
@@ -1173,6 +1167,11 @@ namespace Domivue.Api.Data.Migrations
                     b.Navigation("ListingsTags");
 
                     b.Navigation("Location");
+                });
+
+            modelBuilder.Entity("Domivue.Api.Modules.Listings.Models.Entities.ListingComment", b =>
+                {
+                    b.Navigation("Likes");
                 });
 
             modelBuilder.Entity("Domivue.Api.Modules.Tags.Models.Entities.Tag", b =>

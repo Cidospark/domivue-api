@@ -9,7 +9,7 @@ namespace Domivue.Api.Modules.Subscriptions.Models.Entities
         public string Start { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
 
-        public Guid UserId { get; set; }
+        public string UserId { get; set; } = string.Empty;
         public User? User { get; set; }
     }
 }

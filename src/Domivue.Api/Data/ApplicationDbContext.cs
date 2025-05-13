@@ -1,7 +1,6 @@
 using Domivue.Api.Domains;
 using Domivue.Api.Modules.Abstractions;
 using Domivue.Api.Modules.Categories.Models.Entities;
-using Domivue.Api.Modules.Comments.Models.Entities;
 using Domivue.Api.Modules.GalleryImages.Models.Entities;
 using Domivue.Api.Modules.Listings.Models.Entities;
 using Domivue.Api.Modules.Subscriptions.Models.Entities;
@@ -22,11 +21,11 @@ namespace Domivue.Api.Data
         public DbSet<Attr> Attrs { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Chat> Chat { get; set; }
-        public DbSet<CommentLiker> CommentLikers { get; set; }
+        public DbSet<ListingCommentLiker> ListingCommentLikers { get; set; }
         public DbSet<GalleryImage> GalleryImages { get; set; }
         public DbSet<Listing> Listings { get; set; }
         public DbSet<ListingsCategory> ListingsCategories { get; set; }
-        public DbSet<Comment> ListingComments { get; set; }
+        public DbSet<ListingComment> ListingComments { get; set; }
         public DbSet<ListingLiker> ListingLikers { get; set; }
         public DbSet<ListingsTag> ListingsTags { get; set; }
         public DbSet<ListingLocation> ListingLocations { get; set; }
