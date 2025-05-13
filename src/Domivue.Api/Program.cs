@@ -1,9 +1,18 @@
+using Domivue.Api.Data;
+using Domivue.Api.Modules.Users.Models.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
+
+var conStr = builder.Configuration.GetConnectionString("Database") ?? throw new NullReferenceException("connection string");
+builder.Services.AddDbContextService(conStr);
+builder.Services.AddIdentityService();
 
 var app = builder.Build();
 
@@ -17,7 +26,7 @@ if (app.Environment.IsDevelopment()|| app.Environment.IsProduction() || app.Envi
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+// app.UseAuthorization();
 
 app.MapControllers();
 

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "4e34aa55-3f5d-4b70-9268-578e600ed649",
+    "userName": "duis",
+    "firstName": "Ursula",
+    "lastName": "Morrison ",
+    "email": "ursulamorrison@roughies.com",
+    "gender": "f",
+    "createAt": "2019-10-27T07:07:59 -01:00",
+    "updateAt": "2021-03-09T11:00:14 -01:00",
+    "address":{
+      "street": "666 Ashland Place",
+      "city": "Talpa",
+      "state": "New York",
+      "postalCode": 3446,
+      "country": "St. Pierre and Miquelon"
+    }
+  },
+  {
+    "id": "02cc6af4-75ff-46ac-8232-29dec3ebf6eb",
+    "userName": "labore",
+    "firstName": "Misty",
+    "lastName": "Nunez ",
+    "email": "mistynunez@roughies.com",
+    "gender": "f",
+    "createAt": "2021-12-06T12:52:25 -01:00",
+    "updateAt": "2021-07-13T01:38:55 -01:00",
+     "address":{
+      "street": "162 Exeter Street",
+      "city": "Disautel",
+      "state": "New Hampshire",
+      "postalCode": 6024,
+      "country": "Iraq"
+    }
+  },
+  {
+    "id": "dedaf151-3774-4a85-8db9-216c1ecf676b",
+    "userName": "nisi",
+    "firstName": "Barrera",
+    "lastName": "Burnett ",
+    "email": "barreraburnett@roughies.com",
+    "gender": "m",
+    "createAt": "2021-07-07T05:11:35 -01:00",
+    "updateAt": "2023-11-19T07:42:50 -01:00",
+     "address":{
+      "street": "326 Coles Street",
+      "city": "Kieler",
+      "state": "South Dakota",
+      "postalCode": 2784,
+      "country": "Cambodia"
+    }
+  },
+  {
+    "id": "840e8f23-8dba-4579-964b-15ed4a0c3647",
+    "userName": "et",
+    "firstName": "Cherie",
+    "lastName": "Boyer ",
+    "email": "cherieboyer@roughies.com",
+    "gender": "f",
+    "createAt": "2022-06-10T11:23:57 -01:00",
+    "updateAt": "2014-09-22T12:24:31 -01:00",
+     "address":{
+      "street": "915 Jackson Place",
+      "city": "Vandiver",
+      "state": "Federated States Of Micronesia",
+      "postalCode": 5228,
+      "country": "Cote D'Ivoire (Ivory Coast)"
+    }
+  },
+  {
+    "id": "0752c28e-a3b1-4f96-8a6d-d105b3266e7c",
+    "userName": "qui",
+    "firstName": "Massey",
+    "lastName": "Melton ",
+    "email": "masseymelton@roughies.com",
+    "gender": "m",
+    "createAt": "2016-03-25T06:19:54 -01:00",
+    "updateAt": "2023-03-04T11:15:00 -01:00",
+     "address":{
+      "street": "843 Classon Avenue",
+      "city": "Elrama",
+      "state": "Delaware",
+      "postalCode": 3266,
+      "country": "Western Sahara"
+    }
+  }
+]
