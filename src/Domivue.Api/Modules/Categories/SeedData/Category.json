@@ -1,0 +1,134 @@
+[
+    {
+        "id": "21f6daca-6049-4c59-b03f-3b22eb7d055d",
+        "name": "Residential",
+        "subCategories" : [
+            {
+                "id": "0343a46c-eb47-4240-b69c-7b609e557c85",
+                "name": "House"
+            },
+            {
+                "id": "a89629e2-0d2f-4b50-bdbf-aaff2b7621c3",
+                "name": "Apartment"
+            },
+            {
+                "id": "07ee2555-3dc0-40bc-9e6e-6d294b637d97",
+                "name": "Condo"
+            },
+            {
+                "id": "9d9c97f5-6b3e-4cc0-8845-c4c8288cd15e",
+                "name": "Townhouse"
+            },
+            {
+                "id": "755cddc9-7453-444e-838a-9903f752ac46",
+                "name": "Duplex"
+            },
+            {
+                "id": "6b1c14f3-3290-474d-8b43-9d91bf03c7c8",
+                "name": "Studio"
+            },
+            {
+                "id": "3d1417de-20ab-4569-adb8-4855f75e843a",
+                "name": "Loft"
+            },
+            {
+                "id": "5a185bce-8ac6-4f1f-a0fd-96fbdf8b4b42",
+                "name": "Bungalow"
+            },
+            {
+                "id": "e1eaf61c-ba34-4a27-87fa-5d5540927461",
+                "name": "Villa"
+            },
+            {
+                "id": "bdcbff11-d2c0-42f1-a052-7976c3c1a538",
+                "name": "Cottage"
+            },
+            {
+                "id": "956ad4bf-3273-4067-a451-3d7cb6fe7a8e",
+                "name": "Mansion"
+            },
+            {
+                "id": "436afc72-e9ab-4206-8b41-aab784bc2847",
+                "name": "Mobile Home"
+            }
+        ]
+    },
+    {
+        "id": "cc3c0462-f90f-4bb3-8842-1ad2916ec401",
+        "name": "Special Purpose",
+        "subCategories" : [
+            {
+                "id": "d395cfee-037b-43ea-b047-9317874e85d3",
+                "name": "Hotel"
+            },
+            {
+                "id": "9dde5b7e-8fae-434a-a852-235bebd72dc3",
+                "name": "Resort"
+            },
+            {
+                "id": "5d0369ce-05e9-44ac-b8da-83a0f729a67b",
+                "name": "Mixed-Use Property"
+            },
+            {
+                "id": "645d8faf-82a6-4149-9f01-06414890438a",
+                "name": "Parking Lot"
+            },
+            {
+                "id": "6bcbda3c-2f6a-4a61-87e0-05b5ecc02063",
+                "name": "Hospital / Clinic"
+            },
+            {
+                "id": "2abbb0f9-0389-4d64-b17e-31bb2fde3d4a",
+                "name": "Hostel"
+            }
+        ]
+    },
+    {
+        "id": "3bbc0514-7447-4474-a28e-7bc132a812d4",
+        "name": "Commercial",
+        "subCategories" : [
+            {
+                "id": "5c5d210c-2b68-459b-bde6-10e80a1036e3",
+                "name": "Office Space"
+            },
+            {
+                "id": "25489d4b-eb53-406a-9125-d1f0a28e2c7f",
+                "name": "Retail Space"
+            },
+            {
+                "id": "935d6ec0-6c0b-4d6a-87d0-5aed6c991a51",
+                "name": "Warehouse"
+            },
+            {
+                "id": "0c824618-a9c0-40a0-a0ed-cc1e86630cc9",
+                "name": "Industrial Property"
+            },
+            {
+                "id": "c87f03a6-9ad0-4270-9fea-d4201a0a9c55",
+                "name": "Shopping Center"
+            }
+        ]
+    },
+    {
+        "id": "f2a0b1d4-3c5e-4c8f-9a6b-7d5e0f1b2c3e",
+        "name": "Land",
+        "subCategories" : [
+            {
+                "id": "4d18ecde-10ed-44d7-bdcf-5e1c2e7c3372",
+                "name": "Land"
+            },
+            {
+                "id": "d8f3a2b4-5c7e-4d6a-bb9f-0c8e1a2d3f4e",
+                "name": "Farm Land"
+            },
+            {
+                "id": "7b5c1a2d-3f4e-4b6a-a8c9-0d1e2f3a4b5c",
+                "name": "Agricultural Land"
+            },
+            {
+                "id": "9c8d7e6f-5a4b-4c3d-b2a1-0e1f2g3h4i5j",
+                "name": "Plot"
+            }
+        ]
+    }
+]

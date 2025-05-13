@@ -1,0 +1,24 @@
+namespace Domivue.Api.Modules.Listings.Enums;
+public enum PriceCurrency
+{
+    NGN,
+    EUR,
+    USD,
+    CHF,
+    GBP,
+    JPY,
+    CNY,
+    AUD,
+    CAD,
+    NZD,
+    SEK,
+    NOK,
+    DKK,
+    PLN,
+    CZK,
+    HUF,
+    RON,
+    TRY,
+    INR,
+    BRL,
+}

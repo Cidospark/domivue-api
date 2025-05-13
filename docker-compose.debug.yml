@@ -16,6 +16,8 @@ services:
       - ASPNETCORE_URLS=https://+:7148;http://+:5122
       - ASPNETCORE_Kestrel__Certificates__Default__Password=SecureDomivuePassword123
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    depends_on:
+      - domivue-db
     volumes:
       - ~/.aspnet/https:/https:ro
 

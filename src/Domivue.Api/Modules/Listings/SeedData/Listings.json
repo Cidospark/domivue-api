@@ -1,0 +1,202 @@
+[
+  {
+    "sellerId": "74b56286-dcef-4973-b11c-856077da5153",
+    "subCategoryId":"3bbc0514-7447-4474-a28e-7bc132a812d4",
+    "isLiked": true,
+    "isWishList": true,
+    "isSold": false,
+    "name": "Modern House",
+    "description": "If you're looking for a contemporary design that's on the narrower side and still made to take in a view and enjoy the fresh air, give House Plan 10163 a try! This 2,372-square-foot home places a two-car garage and the den up front to conceal the rest of the floor plan from the street. There's a convenient powder room by the den while the garage enters in the laundry/mudroom. Farther inside, the common areas are totally open concept, with an L-shaped island kitchen overlooking the dining and living areas, both with rayed ceilings above for some definition. Make sure not to miss the walk-in pantry or the foldaway windows that open the kitchen to the outdoor eating bar! The full-width covered back porch has plenty of space for al fresco dining and a full patio furniture set. All three bedrooms are upstairs and include a five-piece primary suite with a walk-in closet and two bedrooms that share a hall bath. This arrangement creates natural living and sleeping zones and is perfect for families who want a modern home with some traditional separation!",
+    "priceCurrency": "NGN",
+    "price": 1200000,
+
+    "galleryImages": [
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-house-plan-us-marketing-plans-main-floor-updated-november-20-2023.webp",
+            "PublicId":"",
+            "IsHero": false
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-house-plan-us-marketing-plans-upper-floor-updated-november-20-2023_1.webp",
+            "PublicId":"",
+            "IsHero": false
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-house-plan-us-marketing-plans-basement-updated-november-20-2023.webp",
+            "PublicId":"",
+            "IsHero": false
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/10163/the-riesling-2-storey-main-floor-plan.webp",
+            "PublicId":"",
+            "IsHero": false
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/10163/the-riesling-2-storey-upper-floor-plan.webp",
+            "PublicId":"",
+            "IsHero": false
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "PhotoUrl": "https://www.thehousedesigners.com/images/plans/01/URD/bulk/10163/the-vineyard-2-storey-collection-the-riesling-copy.webp",
+            "PublicId":"",
+            "IsHero": true
+        }
+    ],
+    
+    "location": {
+        "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+        "latitude": "37.78825",
+        "longitude": "-122.4324",
+        "latitudeDelta": "0.0922",
+        "longitudeDelta": "0.0421",
+        "city": "Lekki Phase-1",
+        "country": "Nigeria",
+        "state": "Lagos"
+    },
+    "listingsTags": [
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"e8bf43e4-158f-4d08-a7b1-c94b4c96473a"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"d8f3a2b4-5c7e-4d6a-bb9f-0c8e1a2d3f4e"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"c3d4e5f6-g7h8-9i0j-1k2l-m3n4o5p6q7r8"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"d4e5f6g7-h8i9-0j1k-2l3m-n4o5p6q7r8s9"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "tagId":"e5f6g7h8-i9j0-1k2l-3m4n-o5p6q7r8s9t0"
+
+        }
+    ],
+    "ListingsCategories":[
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "categoryId":"21f6daca-6049-4c59-b03f-3b22eb7d055d"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "categoryId":"3bbc0514-7447-4474-a28e-7bc132a812d4"
+        }
+    ],
+    "features":[
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"features",
+            "key":"kitchen",
+            "value":"['Kitchen Island', 'L-Shaped', 'Eating Bar', 'Walk-in Pantry']"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"features",
+            "key":"bedroom",
+            "value":"['Double Vanity Sink','Primary Bdrm Upstairs','Walk-in Closet']"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"features",
+            "key":"exterior",
+            "value":"['Covered Front Porch','Covered Rear Porch','Outdoor Living Space']"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"features",
+            "key":"additional",
+            "value":"['Fireplace','Foyer','Great Room','Laundry 1st Fl','Home Office','Mud Room','Open Floor Plan','Family Style','Separate Tub and Shower','Sitting Area']"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"features",
+            "key":"garageLocation",
+            "value":"Front"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"unheatedLivingSpaces",
+            "value":"[{ type: 'Garage', size: '473 sqft' },{ type: 'Deck', size: '507 sqft' },]"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"ceilingHeights",
+            "value":"{main: `10' 3/4\"`,upper: `9' 3/4\"`,foyer: `10' 3/4\"`,}"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"roof",
+            "value":"{framing: 'Truss',pitchPrimary: '1/4:12',pitchPorch: '1/4:12',}"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"framing",
+            "value":"2x6"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"dwellingNumber",
+            "value":"Single"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"bonusAccess",
+            "value":"none"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"stats",
+            "value":"{bedrooms: 3,bathrooms: 2.5,garage: 2,stories: 2,}"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"floorAreas",
+            "value":"{total: '3,352 sqft',heated: '2,372 sqft',firstFloor: '1,226 sqft',secondFloor: '1,146 sqft',}"
+        },
+        {
+            "listingId":"7056fe6b-81c4-4d6f-9877-2ead8ea887cb",
+            "name":"extras",
+            "key":"dimensions",
+            "value":"{width: '37\\' 4\"',depth: '63\\' 5\"',height: '23\\' 9\"',}"
+        }
+    ],
+
+    "seller": {
+        "id": "74b56286-dcef-4973-b11c-856077da5153",
+        "userId":"4e34aa55-3f5d-4b70-9268-578e600ed649",
+        "rated": 4.5,
+        "likes": 12000,
+        "role": "Buyer",
+        "isBlock": false,
+        "bio": "I'm John, a real estate agent with over 10+ experience in the industry, i have built a track record for myself and my company which have promoted and keep me relevant over the years.I will like to walk with you, help you get your dream home and all the necessary documents. i have built a good relationship with client that you can check their feedbacks in the comment section"
+    },
+    
+    "id": "7056fe6b-81c4-4d6f-9877-2ead8ea887cb"
+  }
+]
