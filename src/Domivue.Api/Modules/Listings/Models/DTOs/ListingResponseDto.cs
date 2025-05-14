@@ -2,13 +2,12 @@ namespace Domivue.Api.Modules.Listings.Models.DTOs;
 using System;
 using Domivue.Api.Modules.Abstractions;
 using Domivue.Api.Modules.GalleryImages.Models.DTOs;
+using Domivue.Api.Modules.Listings.Models.Entities;
 using Domivue.Api.Modules.Users.Models.DTOs;
 
 public class ListingResponseDto
 {
     public string Id { get; set; } = "";
-    public string SellerId { get; set; } = "";
-    public string SubCategoryId { get; set; } = "";
     public bool IsLiked { get; set; }
     public bool IsWishList { get; set; }
     public bool IsSold { get; set; }
@@ -21,4 +20,5 @@ public class ListingResponseDto
     public List<GalleryImageResponseDto> GalleryImages { get; set; } = new List<GalleryImageResponseDto>();
     public SellerResponseDto? Seller { get; set; }
     public SubCategoryResponseDto? SubCategory { get; set; }
+    public ListingLocationResponseDto? Location { get; set; }
 }
