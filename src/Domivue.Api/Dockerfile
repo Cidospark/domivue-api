@@ -22,5 +22,5 @@ RUN dotnet publish Domivue.Api.csproj -c $configuration -o /app/publish /p:UseAp
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-#ENTRYPOINT ["dotnet", "Domivue.Api.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet Domivue.Api.dll
+ENTRYPOINT ["dotnet", "Domivue.Api.dll"]
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet Domivue.Api.dll

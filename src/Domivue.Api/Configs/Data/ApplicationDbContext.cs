@@ -10,7 +10,7 @@ using Domivue.Api.Modules.WorkHistories.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Domivue.Api.Data
+namespace Domivue.Api.Configs.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {

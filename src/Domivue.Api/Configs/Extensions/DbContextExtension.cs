@@ -1,4 +1,4 @@
-using Domivue.Api.Data;
+using Domivue.Api.Configs.Data;
 using Microsoft.EntityFrameworkCore;
 
 public static class DbContextExtension

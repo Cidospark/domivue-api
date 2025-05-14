@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
-namespace Domivue.Api.Data;
+namespace Domivue.Api.Configs.Data;
 public static class DbSeeder
     {
         public static async Task SeedAsync(IServiceProvider serviceProvider)
