@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Domivue.Api.Data.Migrations
+namespace Domivue.Api.Configs.Data.Migrations
 {
     /// <inheritdoc />
     public partial class FewChangesMigration : Migration

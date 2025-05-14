@@ -1,4 +1,4 @@
-using Domivue.Api.Data;
+using Domivue.Api.Configs.Data;
 using Domivue.Api.Modules.Users.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 
