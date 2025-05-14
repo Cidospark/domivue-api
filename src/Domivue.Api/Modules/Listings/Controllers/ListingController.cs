@@ -19,6 +19,10 @@ public class ListingController : ControllerBase
     public async Task<IActionResult> Get(string id)
     {
         var listing = await _listingRepository.GetByIdWithDetailsAsync(id);
+        if(listing == null)
+        {
+            return NotFound(new { Message = $"Listing not found for id {id}" });
+        }
         return Ok(listing?.MapToListingResponseDto());
     }
 }

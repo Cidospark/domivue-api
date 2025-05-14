@@ -12,8 +12,9 @@ internal sealed class ListingRepository : Repository<Listing>, IListingRepositor
     {
         return _dbContext.Set<Listing>()
             .Include(x => x.GalleryImages)
-            .Include(x => x.Seller).ThenInclude(x => x.User)
-            .Include(x => x.SubCategory).ThenInclude(x => x.Category)
+            .Include(x => x.Seller!).ThenInclude(x => x.User!)
+            .Include(x => x.SubCategory!).ThenInclude(x => x.Category!)
+            .Include(x => x.Location!)
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 }
