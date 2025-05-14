@@ -18,4 +18,19 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.15" />	
 	  <PackageReference Include="AutoMapper" Version="13.0.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Modules\Listings\SeedData\Listing.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modules\Categories\SeedData\Category.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modules\Tags\SeedData\Tag.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modules\Users\SeedData\UserSeeds.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

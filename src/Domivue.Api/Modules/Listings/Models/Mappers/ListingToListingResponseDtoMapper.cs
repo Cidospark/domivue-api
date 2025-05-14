@@ -12,8 +12,6 @@ public static class ListingToListingResponseDtoMapper{
             listingRes = new ListingResponseDto
             {
                 Id = listing.Id,
-                SellerId = listing.SellerId,
-                SubCategoryId = listing.SubCategoryId,
                 IsLiked = listing.IsLiked,
                 IsWishList = listing.IsWishList,
                 IsSold = listing.IsSold,
@@ -27,7 +25,7 @@ public static class ListingToListingResponseDtoMapper{
             };
         }
 
-        if(listing.GalleryImages != null)
+        if(listing?.GalleryImages != null)
         {
             listingRes.GalleryImages = listing.GalleryImages.Select(g => new GalleryImageResponseDto
             {
@@ -39,7 +37,7 @@ public static class ListingToListingResponseDtoMapper{
             }).ToList();
         }
 
-        if(listing.Seller != null)
+        if(listing?.Seller != null)
         {
             listingRes.Seller = new SellerResponseDto
             {
@@ -67,7 +65,7 @@ public static class ListingToListingResponseDtoMapper{
             }
         }
 
-        if(listing.SubCategory != null)
+        if(listing?.SubCategory != null)
         {
             listingRes.SubCategory = new SubCategoryResponseDto{
                 Id = listing.SubCategory.Id,
@@ -82,6 +80,21 @@ public static class ListingToListingResponseDtoMapper{
                     Name = listing.SubCategory.Category.Name
                 };
             }
+        }
+
+        if(listing?.Location != null)
+        {
+            listingRes.Location = new ListingLocationResponseDto
+            {
+                Id = listing.Location.Id,
+                City = listing.Location.City,
+                State = listing.Location.State,
+                Country = listing.Location.Country,
+                Longitude = listing.Location.Longitude,
+                Latitude = listing.Location.Latitude,
+                LongitudeDelta = listing.Location.LongitudeDelta,
+                LatitudeDelta = listing.Location.LatitudeDelta
+            };
         }
         return listingRes;
     }
